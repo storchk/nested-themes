@@ -12,3 +12,4 @@
 - theming: global theme (`seahawks`, `ravens`)
 - theming: different modes (`light`, `dark`)
 - theming: variants for components (e.g. `Button`: `ghost`, `prominent`)
+- theming: example how to overwrite in theme objects ( `CallToActionSection` vs `SpecialCallToActionSection`)
