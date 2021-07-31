@@ -1,4 +1,3 @@
-import { darken } from 'polished'
 import { ThemeType, ButtonType, ColorType, TypoType, CallToActionSectionType } from './types'
 import { grey } from './general'
 
@@ -17,8 +16,8 @@ const buttonTheme: ButtonType = {
     hover: {
       color: {
         text: grey['100'],
-        surface: darken(0.2, color.primary),
-        border: darken(0.2, color.primary),
+        surface: color.secondary,
+        border: color.secondary,
       },
     },
   },
