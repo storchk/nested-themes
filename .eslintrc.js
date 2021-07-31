@@ -13,5 +13,12 @@ module.exports = {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/semi': 'off',
+    'object-curly-newline': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    'max-len': 'off',
+    '@typescript-eslint/indent': 'off',
+    'operator-linebreak': 'off',
   },
 }

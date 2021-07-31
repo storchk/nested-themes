@@ -11,7 +11,6 @@ import {
   defaultArgTypes,
   defaultArg,
 } from '../../helper'
-import { variantArg } from '../../helper/argTypes'
 
 export default {
   title: 'Pages/Page',

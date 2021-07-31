@@ -1,7 +1,6 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { ThemeProvider } from 'styled-components'
 import { Button, Page, Heading, Typography, CallToActionSection } from './components'
-import { Themes, ThemeModes, ThemeVariant } from './themes'
 import {
   VariantProps,
   ThemeProps,

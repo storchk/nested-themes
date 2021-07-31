@@ -4,10 +4,8 @@ import { StyledCallToActionSectionProps } from './CallToActionSection.types'
 
 export const StyledCallToActionSection = styled.section<StyledCallToActionSectionProps>`
   ${({ theme, themeContext }: { theme: ThemeContextType; themeContext?: string }) => {
-    const color = themeContext
-      ? // @ts-expect-error
-        theme.mode[themeContext].background
-      : theme.color.primary
+    // @ts-expect-error Element implicitly has an 'any' … Remove this comment to see the full description
+    const color = themeContext ? theme.mode[themeContext].background : theme.color.primary
     return css`
       background: ${color};
       width: 100%;
