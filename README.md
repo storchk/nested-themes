@@ -3,7 +3,7 @@
 
 - 💅🏻 styled-Components: https://styled-components.com/ 
 
-## [🚀 DEMO](storchk-nested-themes.netlify.app)
+## [🚀 DEMO](https://storchk-nested-themes.netlify.app/?path=/story/playground--default)
 
 ## 🏃🏼‍♂️ Getting started
 - `yarn && yarn storybook` 
