@@ -10,6 +10,7 @@ import {
   defaultArgTypes,
   defaultArg,
 } from './helper'
+import { pepsiRavens, pepsiSeahawks } from './themes/pepsi'
 
 export default {
   title: 'Playground',
@@ -36,7 +37,13 @@ export const Default: Story<DefaultStoryProps> = ({ theme, mode, variant }) => (
         themeContext="callToActionSection"
         heading="With callToActionSection context"
       />
-
+      <ThemeProvider theme={useTheme('light', theme === 'seahawks' ? pepsiSeahawks : pepsiRavens)}>
+        <Heading tag="h1">Pepsi Theme</Heading>
+        <CallToActionSection
+          themeContext="specialCallToActionSection"
+          heading="With pepsi context"
+        />
+      </ThemeProvider>
       <ThemeProvider theme={useTheme(mode, getSelectedTheme(theme))}>
         <Page>
           <Heading tag="h1">Hamburgerfont</Heading>
@@ -55,6 +62,13 @@ export const Default: Story<DefaultStoryProps> = ({ theme, mode, variant }) => (
             themeContext="specialCallToActionSection"
             heading="With specialCallToActionSection context"
           />
+          <ThemeProvider theme={useTheme(mode, theme === 'seahawks' ? pepsiSeahawks : pepsiRavens)}>
+            <Heading tag="h1">Pepsi Theme</Heading>
+            <CallToActionSection
+              themeContext="specialCallToActionSection"
+              heading="With pepsi context"
+            />
+          </ThemeProvider>
         </Page>
       </ThemeProvider>
     </Page>
